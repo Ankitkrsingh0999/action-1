@@ -3,7 +3,7 @@ name: My first workflow
 on: push
 
 jobs:
-    first-job:
+    first_job:
       runs-on: ubuntu-18.04
       steps:
         - name: Welcome message
