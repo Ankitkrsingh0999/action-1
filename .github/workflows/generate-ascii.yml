@@ -13,5 +13,9 @@ jobs:
     - name: List the files
       run: ls -lrta
 
+    - name: Make script executable
+      run: chmod +x ascii-script.sh
+
     - name: Execute shell script
       run: ./ascii-script.sh
+      shell: bash
