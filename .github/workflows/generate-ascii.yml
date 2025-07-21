@@ -10,5 +10,8 @@ jobs:
     - name: Checkout Repo
       uses: actions/checkout@v4
 
+    - name: List the files
+      run: ls -lrta
+
     - name: Execute shell script
       run: ./ascii.sh
