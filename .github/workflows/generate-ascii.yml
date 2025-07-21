@@ -5,22 +5,22 @@ on:
 
 jobs:
   ascii_job:
-  runs-on: ubuntu-latest
-  steps:
-  - name: Checkout Repo
-    uses: action/checkout@v4
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Repo
+      uses: action/checkout@v4
 
-  - name: Install cowsay program
-    run: sudo apt-get install cowsay -y
+    - name: Install cowsay program
+      run: sudo apt-get install cowsay -y
 
-  - name: Execute cowsay CMD
-    run: cowsay -f dragon "Run from cover, I am a dragon" >> dragon.txt
+    - name: Execute cowsay CMD
+      run: cowsay -f dragon "Run from cover, I am a dragon" >> dragon.txt
 
-  - name: Test file exists
-    run: grep -i "dragon" dragon.txt
+    - name: Test file exists
+      run: grep -i "dragon" dragon.txt
 
-  - name: read file
-    run: cat dragon.txt
+    - name: read file
+      run: cat dragon.txt
 
-  - name: list repo files
-    run: ls -lrta
+    - name: list repo files
+      run: ls -lrta
