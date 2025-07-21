@@ -5,10 +5,10 @@ on:
 
 jobs:
   ascii_job:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu
     steps:
     - name: Checkout Repo
-      uses: action/checkout@v4
+      uses: actions/checkout@v4
 
     - name: Install cowsay program
       run: sudo apt-get install cowsay -y
